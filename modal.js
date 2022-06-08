@@ -1,4 +1,16 @@
 // Get the modal
+var modalmas = document.getElementById("myMasModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var imgmas = document.getElementById("myMasImg");
+var modalImg = document.getElementById("imgmas01");
+var captionText = document.getElementById("captionmas");
+imgmas.onclick = function () {
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+};
+
 var modal = document.getElementById("myBtiModal");
 
 // Get the image and insert it inside the modal - use its "alt" text as a caption
